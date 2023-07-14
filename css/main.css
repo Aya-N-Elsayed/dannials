@@ -1,0 +1,528 @@
+/* ? general styling */
+
+a{
+    text-decoration: none;
+    color: inherit;
+   
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    /* height: 100%; */
+  
+
+
+}
+
+
+body{
+  font-family: "Poppins", sans-serif;
+    
+    font-weight: 400;
+    color: #343434;
+    --animationTime:1s;
+    --graycolor:#5e5a5a;
+    /* height: 100%; */
+    
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+section{
+    padding-block:80px ;
+}
+
+ section p{
+    color: #748182;
+}
+
+
+/* headings styling */
+
+.heading h3{
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.bg-gray {
+    background: #f7f7f7;
+}
+
+
+/* ? navbar styling */
+
+html{
+    --navbarHeight:63.59px;
+    scroll-padding-top: var(--navbarHeight);
+    /* overflow:scroll; */
+    /* height: 100%; */
+
+
+}
+
+
+h1{
+    font-size: 18px;
+    font-weight: 800;
+    padding-top: 8px;
+}
+
+.navbar a{
+    color: white;
+
+}
+
+.navbar-nav .nav-link.active{
+    color: white;
+    border-bottom: #e2e3e5 solid 1px;
+}
+
+.navbar-nav{
+    --bs-nav-link-hover-color: white;
+}
+
+.navbar {
+    --bs-navbar-brand-hover-color: white;
+
+}
+
+/* ? home styling */
+
+.home{
+    background-image: linear-gradient(#00000090,#00000090) ,url(../images/bg.jpg);
+    background-size: 100% 100%;
+    height: 100vh;
+    color: white;
+    padding-top: var(--navbarHeight);
+}
+
+.home .icon{
+    --wAndH: 30px ;
+    background-color: rgba(0, 0, 0,0.3);
+    width: var(--wAndH);
+    height: var(--wAndH);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ? about section styling */
+.about h3{
+    font-weight: 800;
+    margin-bottom: 5px;
+    
+}
+
+.about h4 {
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+/* progress bar styling */
+.progress-bar {
+    display: flex;
+    /* flex-direction: row;
+    justify-content: space-between;
+    align-items: center; */
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    background-color: black;
+    transition: var(--bs-progress-bar-transition);
+}
+
+.barContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 5px 5px; */
+    color: white;
+    margin-inline: 10px;
+
+}
+
+.barContent p{
+    color: white;
+    margin: 0;
+}
+
+.progress {
+    --bs-progress-height: 24px;
+    --bs-progress-font-size: 13px;
+}
+
+/* buttons hover */
+
+.downloadBtn:hover , .submitBtn:hover{
+    background-color: white;
+    border: black solid 1px;
+    color: black;
+
+}
+
+.contactBtn:hover{
+    background-color: black;
+    color: white;
+}
+
+.contactBtn, .downloadBtn , .submitBtn{
+    transition: all var(--animationTime);
+}
+
+/* ?services section styling */
+
+.services .icon, .contact .icon{
+    --wAndH: 80px ;
+    background-color: #f4f4f4;
+    width: var(--wAndH);
+    height: var(--wAndH);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .card-title{
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.services .card-body{
+    padding-block: 50px;
+}
+
+/* hovering */
+
+.services .icon:hover, .contact .icon:hover{
+    background-color: #343434;
+
+}
+
+.services .icon:hover i, .contact .icon:hover i {
+    color: white;
+}
+
+
+
+.services i, .services .icon, .contact i, .contact .icon{
+    transition: all var(--animationTime);
+}
+
+/* ? testimonial section styling */
+
+.carousel img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-inline: auto;
+    margin-bottom: 20px;
+}
+
+.carousel p{
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+
+
+
+
+.carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color:gray;
+}
+
+/* ? works section styling */
+
+/* navbar tab stylying */
+.nav-pills {
+    --bs-nav-pills-border-radius: var(--bs-border-radius);
+    --bs-nav-pills-link-active-color: black;
+    --bs-nav-pills-link-active-bg: rgba(13, 110, 253,0);
+    /* --bs-nav-pills-link-color:black; */
+}
+
+.nav-pills .nav-link{
+    color: #1c1c1c;
+    border: 0;
+    border-radius: 0;
+    padding-block: 0;
+    margin-block: 0;
+}
+
+/* .nav-link h6{
+    margin-block: 0;
+} */
+
+
+/* .navpills .nav-link.active:after{
+    content: '';
+    color: black;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 95%;
+} */
+
+.fitContent{
+    width: fit-content;
+    color: #1c1c1c;
+}
+
+.portfolio .icon{
+    --wAndH: 30px ;
+    background-color:#343434;
+    width: var(--wAndH);
+    height: var(--wAndH);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio i{
+    color: white;
+}
+
+.portfolio li{
+    margin-inline: 2px;
+}
+/* hovering */
+
+.portfolio figure{
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio figcaption{
+    --spaceLay:10px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: var(--spaceLay);
+    left: var(--spaceLay);
+    right: var(--spaceLay);
+    top:  var(--spaceLay);
+    /* transform: translateY(-20px); */
+    transform: translateY(10px);
+    opacity: 0;
+    transition: all var(--animationTime);
+
+    
+
+
+}
+
+
+/* modal styling */
+
+.modal-header{
+    background-color: rgba(84, 79, 79, 0.5);
+    padding: 0;
+    border-radius: 0;
+    border: 0;
+}
+
+.modal-body{
+    padding: 0;
+}
+
+.modal-content{
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+    border: 0;
+}
+
+
+
+  
+.modal-body figure{
+    margin: 0;
+}  
+
+/* hovering  */
+
+.portfolio figure:hover figcaption{
+
+    opacity: 0.7;
+    transform: translateY(0px);
+
+}
+
+
+
+.portfolio .icon:hover i {
+    color: #343434;
+}
+
+
+.portfolio .icon:hover  {
+    background-color: white;
+    border: #343434 solid 1px;
+}
+
+
+/* ? clients section styling */
+
+.clients i{
+    font-size: 32px;
+}
+.dat{
+    text-align: center;
+}
+
+.dat h5{
+    font-weight: 900;
+    font-size: 30px;
+}
+
+/* ? team section styling */
+
+.team .card{
+    background-color: var(--graycolor);
+    color: white;
+    font-weight: bold;
+    border: 0;
+    overflow: hidden;
+
+}
+
+.team p{
+    color: white;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* overlay */
+
+.cardimg{
+    position: relative;
+    overflow: hidden;
+
+
+}
+.team li{
+    margin-inline: 10px;
+}
+
+.overlay{
+    --spaceLay:10px;
+    background-color: rgba(255, 255, 255,0.92);
+    position: absolute;
+    bottom: var(--spaceLay);
+    left: var(--spaceLay);
+    right: var(--spaceLay);
+    top: var(--spaceLay);
+    opacity: 0;
+    transform:scale(0.5,0.5);
+    transition: all var(--animationTime);
+    
+
+}
+
+.team .icon{
+    --wAndH: 48px ;
+    background-color: rgb(0, 0, 0,0.93);
+    width: var(--wAndH);
+    height: var(--wAndH);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.team i{
+    transform: rotateY(-180deg) scale(1, 1);
+
+}
+
+
+
+/* hovering for overlayer */
+.cardimg:hover .overlay{
+    transform: rotateY(180deg) scale(0.9, 0.9);
+    opacity: 1.0;
+}
+
+
+.cardimg:hover{
+    scale: 1.1 1.1;
+
+    
+}
+
+.cardimg img{
+    overflow: hidden;
+}
+/* hovering */
+
+.team .icon:hover i{
+    color: #343434;
+
+}
+
+.team .icon:hover{
+    background-color: white;
+    border: #1c1c1c solid 1px;
+}
+
+/* ?contact section styling */
+
+.submitBtn{
+padding: 10px 40px;
+}
+
+
+.contact h6{
+    font-weight: bold;
+}
+
+.contact .icon{
+    --wAndH: 50px ;
+    background-color: #f4f4f4;
+    width: var(--wAndH);
+    height: var(--wAndH);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ? footer section styling */
+
+footer {
+    background-color: #1c1c1c;
+    height: 50px;
+
+}
+
+footer .container-fluid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    /* margin-block: auto; */
+}
+
+footer p{
+    color: #999;
+    font-size: smaller;
+}
