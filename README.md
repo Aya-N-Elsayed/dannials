@@ -1,4 +1,3 @@
-# dannials
 
 
 <strong>Project Title</strong>: 'Daniels' - Modern Front-End Web Design
